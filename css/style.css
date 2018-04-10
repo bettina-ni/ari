@@ -28,7 +28,6 @@ a:not(.btn) { color: #000; text-decoration: underline;}
       padding: 1px;
       text-align: center;
       text-transform: uppercase;
-      border-left: 3px solid;
 }
 
 .event-list .day {
@@ -47,8 +46,12 @@ a:not(.btn) { color: #000; text-decoration: underline;}
 
 .calendar-text, .calendar-date {
       /*background-color:#fff;*/
-      padding-top:10px;
-      padding-bottom:10px;
+      /*padding-top:10px;
+      padding-bottom:10px;*/
+}
+
+.calendar-date {
+      border-left: 3px solid;
 }
 
 .calendar-text .event {
@@ -56,11 +59,17 @@ a:not(.btn) { color: #000; text-decoration: underline;}
       font-size:larger;
 }
 
-.calendar-text .location {
+.calendar-text .location, .calendar-text span {
       color: rgb(0,0,0);
       color: rgba(0,0,0,0.5);
       font-size:smaller;
 }
+
+.calendar-text .location i {
+      /*padding-left:26px;
+      padding-right: 8px;*/
+}
+
 
 /* Vorteile */
 #vorteile .card {
