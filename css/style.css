@@ -1,0 +1,652 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,700i');
+
+/* Basics */
+.bg-light { background-color:#e7e7e7 !important; }
+.bg-va-green { background-color: #8BC34A; }
+.text-va-darkgreen { color: #77a83e;}
+.text-va-green { color: #8BC34A; }
+.border-va-green { border-color: #8BC34A !important; }
+.rounded { border-radius:1rem !important; }
+
+
+/* Event Calendar */
+.event-container {
+      border-bottom: 1px solid #bababa;
+}
+
+.event-container:first-child {
+      border-top: 1px solid #bababa;
+}
+
+.event-list .time {
+      padding: 1px;
+      text-align: center;
+      text-transform: uppercase;
+      border-left: 3px solid;
+}
+
+.event-list .day {
+      display: block;
+      font-size: 2rem;
+      font-weight: 100;
+      line-height: 1;
+}
+
+.event-list .month {
+      display: block;
+      font-size: 1rem;
+      font-weight: 900;
+      line-height: 1;
+}
+
+.calendar-text, .calendar-date {
+      /*background-color:#fff;*/
+      padding-top:10px;
+      padding-bottom:10px;
+}
+
+.calendar-text .event {
+      font-weight:bold;
+      font-size:larger;
+}
+
+.calendar-text .location {
+      color: rgb(0,0,0);
+      color: rgba(0,0,0,0.5);
+      font-size:smaller;
+}
+
+/* Vorteile */
+#vorteile .card {
+  flex-direction: row;
+  background:none;
+}
+
+#vorteile .card-body {
+  position: relative;
+  padding:0;
+}
+#vorteile .card-text{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+}
+#vorteile .card-header {
+  background:none;
+  border:none;
+  padding: .15rem 1.25rem .15rem .75rem;
+  display: flex;
+  align-items: center;
+
+}
+#vorteile img {
+  width:48px;
+}
+
+#vorteile .two-icons {
+  flex-direction: column;
+}
+
+
+/* Pakete */
+
+#pakete .bg-gradient {
+  background-color: #8BC34A;
+  background: linear-gradient(145deg, #8BC34A, #618c2f);
+}
+
+#pakete .card {
+  border:none;
+  border-radius: 0;
+}
+
+#pakete .card-text {
+  border-top:2px dashed #fff;
+  padding-top:14px;
+}
+
+#pakete .card-title {
+  height:70px;
+}
+
+#pakete .card-header, #pakete .card-title {
+  line-height: 1;
+}
+
+#pakete .card-header {
+  border:2px solid #bdbdbd;
+  border-bottom:none;
+}
+
+#pakete .card-body {
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}
+
+
+* {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+h1{ font-size: 2.5em; font-weight: lighter; }
+h2{ font-size: 2em; font-weight: lighter; }
+h3{ font-size: 1.5em; font-weight: lighter; }
+
+span.text-warning {color: #FFE254; font-variant: small-caps; vertical-align: +5px; }
+
+.img-full{
+  width: 100%;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+--------SPECIFIC FOR LANDING PAGE---------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------*/
+header.intro{
+  background-image: url("../img/mann-im-freien.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+}
+
+header.projektintro{
+  background-image: url("../img/projekt-arbeiten.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+
+}
+
+header.preiseintro{
+  background-image: url("../img/laptop-work.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+  text-align: left;
+}
+
+.brand-heading{
+  font-size: 3.5em;
+  color: #fff;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.intro-text{
+  font-size: 2em;
+  color: #fff;
+  font-weight: lighter;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+
+.projektintro .brand-heading{
+    text-align: left;
+    font-weight: bolder;
+}
+
+.preiseintro .brand-heading{
+    text-align: left;
+}
+
+.preiseintro h1{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-weight: bolder;
+}
+
+.preiseintro h2{
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.preiseintro .intro-text{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.intro-text > a {
+  text-align: center;
+}
+
+.landing-p{
+  font-size: 1.3em;
+}
+
+.projektidd{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/*-preise hackerl liste-*/
+ul.hackerl {
+  padding-left:50px;
+  list-style:none;
+  font-size: 1.3em;
+}
+
+ul.hackerl > li {
+  margin-bottom:10px;
+}
+
+ul.hackerl > li:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin:0 15px 0 -34px;
+}
+
+.price{
+  font-size: 1.3em;
+}
+
+.modal-body{
+  padding: 0px;
+}
+
+#info{padding-top: 40px;}
+
+/*-btn-circle-scroll-*/
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: white;
+  background: #b0d683;
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+
+/*-----FOOTER-----------*/
+footer{
+  background-color: #e7e7e7;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-top: 5px solid #fff;
+}
+
+footer a{
+  color: #ff9933;
+}
+
+footer ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+footer ul > li > a{
+  color: #333;
+}
+
+footer h4{
+  margin-bottom: 5px;
+}
+
+
+/*-popover-*/
+.popover {max-width: 600px;}
+
+/*-----Panel------*/
+.panel-default > .panel-heading{
+  border-color: #8BC34A;
+}
+
+.panel-heading{
+  border-bottom: 3px solid;
+}
+
+/*-----Radio Buttons Color and Style------*/
+.radio {
+  padding-left: 20px;
+}
+
+/*-space between radio btn and label-*/
+.radio label {
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+}
+
+/*-dot inside-*/
+.radio label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out;
+}
+
+.radio label::after {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 11px;
+  height: 11px;
+  left: 3px;
+  top: 3px;
+  margin-left: -20px;
+  border-radius: 50%;
+  background-color: #555555;
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+
+/*-hide default radio-*/
+.radio input[type="radio"] {
+  opacity: 0;
+}
+
+/*-dot inside-*/
+.radio input[type="radio"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.radio input[type="radio"]:checked + label::after {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.radio input[type="radio"]:disabled + label {
+  opacity: 0.65; }
+.radio input[type="radio"]:disabled + label::before {
+  cursor: not-allowed;
+}
+
+/*-radio color-*/
+.radio input[type="radio"] + label::after {
+  background-color: #8BC34A; }
+.radio input[type="radio"]:checked + label::before {
+  border-color: #8BC34A; }
+.radio input[type="radio"]:checked + label::after {
+  background-color: #8BC34A; }
+
+/*-----Checkbox Color and Style------*/
+.checkbox {
+  padding-left: 20px; }
+.checkbox  label {
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+  font-weight: normal;
+}
+.checkbox  label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.checkbox  label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+}
+.checkbox  input[type="checkbox"] {
+  opacity: 0;
+}
+.checkbox  input[type="checkbox"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.checkbox  input[type="checkbox"]:checked + label::after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+.checkbox  input[type="checkbox"]:disabled + label {
+  opacity: 0.65;
+}
+.checkbox  input[type="checkbox"]:disabled + label::before {
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+
+/*-checkbox color-*/
+.checkbox input[type="checkbox"]:checked + label::before {
+  background-color: #8BC34A;
+  border-color: #8BC34A; }
+.checkbox input[type="checkbox"]:checked + label::after {
+  color: #fff; }
+
+
+ /*-Media queries-*/
+@media (max-width: 768px) {
+
+
+  /*-nav-*/
+  .navbar-brand > img{
+    max-width: 155px;
+  }
+
+  .navbar-header > button {
+    line-height: 68.88px;
+  }
+
+  .navbar-collapse{
+    background-color: #8BC34A;
+  }
+
+  .navbar-collapse > ul.nav > li > a{
+    color: #fff;
+  }
+
+  .navbar-collapse > ul.nav > li > a:hover{
+    color: #FFE254;
+    background-color: transparent;
+  }
+
+  .navbar-collapse.in {
+    overflow-y: inherit !important;
+  }
+
+  h1{ font-size: 1.8em !important;}
+  h2{ font-size: 1.6em !important;}
+  h3{ font-size: 1.5em !important;}
+  .intro-text{ font-size: 1.4em !important;}
+  p.landing-p{ font-size: 1.4em !important;}
+
+  .preiseintro{
+    padding-top: 20%;
+  }
+
+  .projektintro{
+    padding-top: 40%;
+  }
+
+  section#cta > div > div > div > img{
+    display: none;
+  }
+
+  header.intro{
+    padding-top: 8%;
+  }
+
+  .desktop-logo{
+    display: none !important;
+  }
+
+  .mobile-logo{
+    display: block !important;
+    min-width: 150px !important;
+  }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  header.intro{
+    height:100vh;
+    min-height: 600px;
+  }
+
+  /*-nav-*/
+  .top-nav-collapse{
+    background-color: #8BC34A;
+  }
+
+  .navbar-brand > img{
+    max-height: 70px;
+  }
+
+  .navbar-nav li a {
+    line-height: 70px;
+  }
+
+  ul.nav > li > a{
+    color: #fff;
+    height: 100px;
+  }
+
+  ul.nav > li#rightlog{
+    line-height: 100px;
+    margin-left: 15px;
+  }
+
+  ul.nav > li > a:hover, ul.nav > li > a:active, ul.nav > li > a:visited, ul.nav > li > a:link {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .desktop-logo{
+    display: block !important;
+  }
+
+  .mobile-logo{
+    display: none !important;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  #vorteile .card-text{
+    font-size:14px;
+  }
+
+  #vorteile img {
+    width:36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #vorteile .card-text{
+    font-size:11px;
+  }
+
+   #vorteile img {
+    width:32px;
+  }
+
+  #vorteile .card-header {
+  padding: .75rem .60rem .75rem .20rem;
+}
+}
