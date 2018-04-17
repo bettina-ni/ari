@@ -18,15 +18,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <!-- Theme CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- Abstand Head -->
+    <script src="js/ics.deps.min.js"></script>
     <script type="text/javascript">
                 var shiftWindow = function() { scrollBy(0, -110) };
                 if (location.hash) shiftWindow();
                 window.addEventListener("hashchange", shiftWindow);
-    </script>
 
-    <!-- for export of events as ics file -->
-    <script type="text/javascript">
+
+    // for export of events as ics file
+
       cal_single = ics();
       cal_single.addEvent('Testkalendereintrag1', 'Vielleicht kommt hier die genauere Beschreibung. Man wird sehen.', 'Wien', '10/05/2018', '10/05/2018');
 
@@ -87,8 +87,8 @@
                          <div class="col-12 event-list">
                               <h2>Lernen Sie den „Versicherungsassistenten“ kennen – auf der ARISECUR Roadshow</h2>
                               <p>Sie suchen nach einem Beratungstool, das Ihren Arbeitsaufwand reduziert und mit dem Sie rechtlich auf der sicheren Seite sind?<br />
-                              Lernen Sie den "Versicherungsassistenten" kennen - auf der gemeinsamen Roadshow mit ARISECUR.</p>
-                              <p>Das Team von netinsurer präsentiert die Funktionen des Versicherungsassistenten vor Ort in einer Live-Demo. Nutzen Sie auch die Möglichkeit, selbst eine Testberatung mit der Software durchzuführen.</p>
+                              Lernen Sie den „Versicherungsassistenten“ kennen - auf der gemeinsamen Roadshow mit ARISECUR.</p>
+                              <p>Das Team von netinsurer präsentiert die Funktionen des „Versicherungsassistenten“ vor Ort in einer Live-Demo. Nutzen Sie auch die Möglichkeit, selbst eine Testberatung mit der Software durchzuführen.</p>
 
                               <h4 class="mt-5 ">Save the Date - die Termine für 2018</h4>
                               <p>ARISECUR IDD-konforme Beratung powered by netinsurer</p>
@@ -104,6 +104,7 @@
                                     <div class="col calendar-text pl-0">
                                           <span class="event">Wien</span><br />
                                           <span class="location pr-3">Eventhotel PYRAMIDE, Parkallee 2, 2334 Vösendorf </span> <span style="white-space: nowrap"><i class="far fa-clock pr-2"></i>8:30 - 11:00</span>
+                                          <!--<a href="#" onclick="javascript:cal_single.download('ARISECUR Roadshow Wien')">Termin als ics speichern</a>-->
                                     </div>
                               </div>
                               <div class="row event-container py-2">
@@ -185,7 +186,7 @@
           <h2>„Der Versicherungsassistent“ - Ihre digitale Beratungslösung</h2>
           <p>Vereinfachen Sie Ihre Beratungsprozesse. Der „Versicherungsassistent“ von netinsurer unterstützt österreichische Versicherungsberater bei der Durchführung rechtskonformer Versicherungsberatung. Er ist für alle Vertriebssparten geeignet – Makler, Agenten, Bankenvertrieb.</p>
 
-          <p>Gemäß den Vorgaben von IDD und DSGVO entwickelt, begleitet  der „Versicherungsassistent“ Sie durch den Prozess der Risikoanalyse, Beratung und Dokumentation und gibt sowohl Ihnen als auch dem Kunden die Sicherheit, dass die Beratung vollständig und rechtskonform vorgenommen wurde. Profitieren Sie auch von der revisionssicheren Dokumentenmappe, in der nicht nur die vom “Versicherungsassistenten“ generierten Protokolle und Vergleiche gespeichert werden, sondern in die Sie auch eigene Dokumente hochladen können. So haben Sie alle Informationen sicher und geordnet an einem Ort gespeichert. </p>
+          <p>Gemäß den Vorgaben von IDD und DSGVO entwickelt, begleitet  der „Versicherungsassistent“ Sie durch den Prozess der Risikoanalyse, Beratung und Dokumentation und gibt sowohl Ihnen als auch dem Kunden die Sicherheit, dass die Beratung vollständig und rechtskonform vorgenommen wurde. Profitieren Sie auch von der revisionssicheren Dokumentenmappe, in der nicht nur die vom „Versicherungsassistenten“ generierten Protokolle und Vergleiche gespeichert werden, sondern in die Sie auch eigene Dokumente hochladen können. So haben Sie alle Informationen sicher und geordnet an einem Ort gespeichert. </p>
 
           <p>Genauere Informationen zum „Versicherungsassistenten“ finden Sie im <a href="http://blog.arisecur.com/2018/04/16/der-versicherungsassistent/" target="_blank">ARISECUR Blog</a>.</p>
         </div>
@@ -252,7 +253,7 @@
                             <img src="img/icon-cloud-green.png" />
                           </div>
                           <div class="card-body">
-                            <p class="card-text">SaaA Lösung (Software as a Service) - online jederzeit verfügbar</p>
+                            <p class="card-text">SaaS Lösung (Software as a Service) - online jederzeit verfügbar</p>
                           </div>
                       </div>
               </div>
@@ -279,7 +280,7 @@
           <div class="row justify-content-around text-white">
                 <div class="col-12 mb-3 text-dark">
                       <h2>Zwei Pakete zur Auswahl</h2>
-                      <p>Mit ARISECUR sparen Sie zusätzlich. ARISECUR-Partnern wird der "Versicherungsassistent" zum vergünstigten Sonderpreis angeboten.</p>
+                      <p>Mit ARISECUR sparen Sie zusätzlich. ARISECUR-Partnern wird der „Versicherungsassistent“ zum vergünstigten Sonderpreis angeboten.</p>
                 </div>
                 <div class="card border-va-green col-md-5">
                     <div class="card-header bg-light text-center text-va-darkgreen h2">Paket "Privat"<br />
@@ -294,7 +295,7 @@
                         <div class="card-text">
                             <ul>
                               <li>Unfall, Haushalt, Eigenheim, Kfz, Haftpflicht, Rechtsschutz</li>
-                              <li>Erwerbsunfähigkeit, Berufunfähigkeit, Grundfähigkeiten</li>
+                              <li>Erwerbsunfähigkeit, Berufsunfähigkeit, Grundfähigkeiten</li>
                               <li>Krankenversicherung, Dread Disease</li>
                               <li>Bestattungskosten</li>
                               <li>Lebensversicherung</li>
@@ -322,7 +323,7 @@
                           <p>Paket "Privat"</p>
                           <ul>
                               <li>Unfall, Haushalt, Eigenheim, Kfz, Haftpflicht, Rechtsschutz</li>
-                              <li>Erwerbsunfähigkeit, Berufunfähigkeit, Grundfähigkeiten</li>
+                              <li>Erwerbsunfähigkeit, Berufsunfähigkeit, Grundfähigkeiten</li>
                               <li>Krankenversicherung, Dread Disease</li>
                               <li>Bestattungskosten</li>
                               <li>Lebensversicherung</li>
@@ -336,7 +337,7 @@
                           </ul>
                           <p>Paket "Gewerbe"</p>
                           <ul class="pb-2">
-                              <li>Sach, Haftpflicht</li>
+                              <li>Sach- &amp; Haftpflicht</li>
                               <li>Betriebsunterbrechung</li>
                               <li>Transportversicherung</li>
                               <li>Maschinenbruch</li>
@@ -352,7 +353,7 @@
               </div>
               <div class="row justify-content-center mt-5 text-center">
                     <div class="col-8">
-                          <p>Sie möchten mehr über den Versicherungsassistenten erfahren oder gleich einen Software-Zugang anfordern? Dann senden Sie bitte eine Anfrage an Nicole Wlasak, Leitung Maklerbetreuung & Innendienst bei ARISECUR.</p>
+                          <p>Sie möchten mehr über den „Versicherungsassistenten“ erfahren oder gleich einen Software-Zugang anfordern? Dann senden Sie bitte eine Anfrage an Nicole Wlasak, Leitung Maklerbetreuung & Innendienst bei ARISECUR.</p>
 
                     </div>
               </div>
@@ -462,6 +463,8 @@
 
 
     <!-- Optional JavaScript -->
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
