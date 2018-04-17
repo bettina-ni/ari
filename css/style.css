@@ -65,6 +65,13 @@ a:not(.btn) { color: #000; text-decoration: underline;}
       font-size:smaller;
 }
 
+/* calendar icon for ics-Export */
+.event-list .ics i {
+      color: rgb(0,0,0);
+      color: rgba(0,0,0,0.5);
+      line-height: 1.5;
+}
+
 .calendar-text .location i {
       /*padding-left:26px;
       padding-right: 8px;*/

@@ -25,11 +25,19 @@
                 window.addEventListener("hashchange", shiftWindow);
 
 
-    // for export of events as ics file
-
-      cal_single = ics();
-      cal_single.addEvent('Testkalendereintrag1', 'Vielleicht kommt hier die genauere Beschreibung. Man wird sehen.', 'Wien', '10/05/2018', '10/05/2018');
-
+    // events for export of events as ics file
+      cal_vienna = ics();
+      cal_upperaustria = ics();
+      cal_salzburg = ics();
+      cal_tirol = ics();
+      cal_vorarlberg = ics();
+      cal_steiermark = ics();
+      cal_vienna.addEvent('ARISECUR Roadshow Wien', 'IDD-konforme Beratung', '2334 Vösendorf - Parkallee 2 - Eventhotel PYRAMIDE', '05/14/2018 8:30 am', '05/14/2018 11:00 am');
+      cal_upperaustria.addEvent('ARISECUR Roadshow Oberösterreich', 'IDD-konforme Beratung', '4052 Ansfelden - Ansfelden Süd - Rosenberger', '05/14/2018 3:30 pm', '05/14/2018 06:00 pm');
+      cal_salzburg.addEvent('ARISECUR Roadshow Salzburg', 'IDD-konforme Beratung', '5020 Salzburg - Alpenstraße 115-117 - Amadeohotel Schaffenrath', '05/15/2018 8:30 am', '05/15/2018 11:00 am');
+      cal_tirol.addEvent('ARISECUR Roadshow Tirol', 'IDD-konforme Beratung', '6060 Hall in Tirol - Thurnfeldgasse 1 - Parkhotel Hall', '05/15/2018 3:30 pm', '05/15/2018 06:00 pm');
+      cal_vorarlberg.addEvent('ARISECUR Roadshow Vorarlberg', 'IDD-konforme Beratung', '6850 Dornbirn - Mozartstrasse 2 - Vienna House Martinspark', '05/16/2018 8:30 am', '05/16/2018 11:00 am');
+      cal_steiermark.addEvent('ARISECUR Roadshow Steiermark', 'IDD-konforme Beratung', '8010 Graz - Körblergasse 111-113 - WIFI', '05/23/2018 2:30 pm', '05/23/2018 05:00 pm');
 
       // use this for easy debugging
       makelogs = function(obj) {
@@ -104,7 +112,11 @@
                                     <div class="col calendar-text pl-0">
                                           <span class="event">Wien</span><br />
                                           <span class="location pr-3">Eventhotel PYRAMIDE, Parkallee 2, 2334 Vösendorf</span> <span style="white-space: nowrap"><i class="far fa-clock pr-2"></i>8:30 - 11:00</span>
-<!--<a href="#" onclick="javascript:cal_single.download('ARISECUR Roadshow Wien')">Termin als ics speichern</a>-->
+                                    </div>
+                                    <div class="col-1 h-100 d-none d-sm-block">
+                                          <div class="ics">
+                                                <a href="#" onclick="javascript:cal_vienna.download('ARISECUR Roadshow Wien')" alt="Termin als ics-Datei exportieren" title="Termin als ics-Datei exportieren"><i class="far fa-calendar-alt fa-2x"></i></a>
+                                          </div>
                                     </div>
                               </div>
                               <div class="row event-container py-2">
@@ -118,6 +130,11 @@
                                           <span class="event">Oberösterreich</span><br />
                                           <span class="location pr-3">Rosenberger, Ansfelden Süd, 4052 Ansfelden</span> <span style="white-space: nowrap"><i class="far fa-clock pr-2"></i>15:30 - 18:00</span>
                                     </div>
+                                    <div class="col-1 h-100 d-none d-sm-block">
+                                          <div class="ics">
+                                                <a href="#" onclick="javascript:cal_upperaustria.download('ARISECUR Roadshow Oberoesterreich')" alt="Termin als ics-Datei exportieren" title="Termin als ics-Datei exportieren"><i class="far fa-calendar-alt fa-2x"></i></a>
+                                          </div>
+                                    </div>
                               </div>
                               <div class="row event-container py-2">
                                     <div class="col-3 col-lg-2 calendar-date border-va-green justify-content-center mr-3 mr-md-0">
@@ -129,6 +146,11 @@
                                     <div class="col calendar-text pl-0">
                                           <span class="event">Salzburg</span><br />
                                           <span class="location pr-3">Amadeohotel Schaffenrath, Alpenstraße 115-117, 5020 Salzburg </span><span style="white-space: nowrap"><i class="far fa-clock pr-2"></i>8:30 - 11:00</span>
+                                    </div>
+                                    <div class="col-1 h-100 d-none d-sm-block">
+                                          <div class="ics">
+                                                <a href="#" onclick="javascript:cal_salzburg.download('ARISECUR Roadshow Salzburg')" alt="Termin als ics-Datei exportieren" title="Termin als ics-Datei exportieren"><i class="far fa-calendar-alt fa-2x"></i></a>
+                                          </div>
                                     </div>
                               </div>
                               <div class="row event-container py-2">
@@ -142,6 +164,11 @@
                                           <span class="event">Tirol</span><br />
                                           <span class="location pr-3">Parkhotel Hall, Thurnfeldgasse 1, 6060 Hall in Tirol </span><span style="white-space: nowrap"><i class="far fa-clock pr-2"></i>15:30 - 18:00</span>
                                     </div>
+                                    <div class="col-1 h-100 d-none d-sm-block">
+                                          <div class="ics">
+                                                <a href="#" onclick="javascript:cal_tirol.download('ARISECUR Roadshow Tirol')" alt="Termin als ics-Datei exportieren" title="Termin als ics-Datei exportieren"><i class="far fa-calendar-alt fa-2x"></i></a>
+                                          </div>
+                                    </div>
                               </div>
                               <div class="row event-container py-2">
                                     <div class="col-3 col-lg-2 calendar-date border-va-green justify-content-center mr-3 mr-md-0">
@@ -154,6 +181,11 @@
                                           <span class="event">Vorarlberg</span><br />
                                           <span class="location pr-3">Vienna House Martinspark, Mozartstraße 2, 6850 Dornbirn </span><span style="white-space: nowrap"><i class="far fa-clock pr-2"></i>8:30 - 11:00</span>
                                     </div>
+                                    <div class="col-1 h-100 d-none d-sm-block">
+                                          <div class="ics">
+                                                <a href="#" onclick="javascript:cal_vorarlberg.download('ARISECUR Roadshow Vorarlberg')" alt="Termin als ics-Datei exportieren" title="Termin als ics-Datei exportieren"><i class="far fa-calendar-alt fa-2x"></i></a>
+                                          </div>
+                                    </div>
                               </div>
                               <div class="row event-container py-2">
                                     <div class="col-3 col-lg-2 calendar-date border-va-green justify-content-center mr-3 mr-md-0">
@@ -165,6 +197,11 @@
                                     <div class="col calendar-text pl-0">
                                           <span class="event">Steiermark</span><br />
                                           <span class="location pr-3">WIFI Körblergasse 111-113, 8010 Graz </span><span style="white-space: nowrap"><i class="far fa-clock pr-2"></i>14:30 - 17:00</span>
+                                    </div>
+                                    <div class="col-1 h-100 d-none d-sm-block">
+                                          <div class="ics">
+                                                <a href="#" onclick="javascript:cal_steiermark.download('ARISECUR Roadshow Steiermark')" alt="Termin als ics-Datei exportieren" title="Termin als ics-Datei exportieren"><i class="far fa-calendar-alt fa-2x"></i></a>
+                                          </div>
                                     </div>
                               </div>
                         </div>
